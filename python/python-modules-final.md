@@ -17,7 +17,7 @@ for path in sys.path:
 ```
 
 **Astuce VS Code**
-Pour que l’éditeur (pylance) trouve tes modules locaux sans bidouiller le code, ajoute des chemins dans `.vscode/settings.json` :
+Pour que l’éditeur (pylance) trouve les modules locaux sans bidouiller le code, ajouter des chemins dans `.vscode/settings.json` :
 
 ```json
 {
@@ -178,13 +178,3 @@ def send(email, message):
 def attach_file(filename):
     print(f'Attach {filename} to the message')
 ```
-
----
-
-## ✅ Récap bonnes pratiques
-
-* Préfère **imports explicites** à `import *`.
-* **Structure ton projet en package** (dossier `src/` recommandé) et utilise `pip install -e .` pour développer localement.
-* **Évite** de modifier `sys.path` en production.
-* Utilise un **environnement virtuel** (venv) et un linter (Pylance/ruff).
-* Sois **cohérent** sur les alias (`as`), et documente-les.

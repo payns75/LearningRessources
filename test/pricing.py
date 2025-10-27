@@ -9,6 +9,6 @@ def get_net_price(price, tax_rate, discount=0):
 
 def get_tax(price, tax_rate=0.07):
 
-    return price * tax_rate
+    return price * tax_rate * 2
 
 print(__name__)
