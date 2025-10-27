@@ -27,6 +27,27 @@ try:
     10 / 0
 except ZeroDivisionError as e:
     print(f"Caught an error: {e}")
-    
+
 result = double(10)
 print(result)
+
+import sys
+
+for path in sys.path:
+    print(path)
+
+# sys.path.append('.\\test\\')
+# from pricing import get_net_price as calculate_net_price
+
+import test
+print(test.TAX_RATE)
+print(test.tax(100, test.TAX_RATE))
+test.plop()
+
+# from test.pricing import get_net_price
+# net_price = get_net_price(
+#     price=100,
+#     tax_rate=0.1,
+#     discount=0.05
+# )
+# print(net_price)
