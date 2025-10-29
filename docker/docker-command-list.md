@@ -1,4 +1,4 @@
-# 🐳 Docker Cheat Sheet — CCQ AI-Analyze Stack
+# 🐳 Docker Cheat Sheet — AI-Analyze Stack
 
 > Résumé complet des commandes Docker, des modèles Dockerfile et des bonnes pratiques pour le stack **RAG / AI-Analyze** sous Windows (WSL2 / Hyper-V).
 
@@ -245,8 +245,8 @@ curl -I http://ollama:11434
 
 ```yaml
 environment:
-  HTTP_PROXY: http://proxy.ccq.qc.ca:8080
-  HTTPS_PROXY: http://proxy.ccq.qc.ca:8080
+  HTTP_PROXY: http://proxy.xxx.qc.ca:8080
+  HTTPS_PROXY: http://proxy.xxx.qc.ca:8080
   NO_PROXY: localhost,127.0.0.1,qdrant,ollama
 ```
 
@@ -318,7 +318,7 @@ docker volume prune
 
 ---
 
-## 🧠 7. CCQ RAG Stack — Quick Reference
+## 🧠 7. RAG Stack — Quick Reference
 
 ### 🔹 Exemple de docker-compose simplifié
 
