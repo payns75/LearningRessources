@@ -1,9 +1,5 @@
 # 🐍 Python — PIP, Packages tiers & Environnements virtuels
 
-> Référence pratique pour gérer les dépendances Python, les environnements isolés et les certificats d’entreprise (ex. ZScaler).
-
----
-
 ## 📦 Gestion des packages avec PIP
 
 ### 🔎 Vérifier la version de PIP
@@ -58,6 +54,12 @@ pip uninstall <nom_du_package>
 ```powershell
 pip show requests
 ```
+
+### 🧩 Garde PIP à jour
+
+  ```powershell
+  python -m pip install --upgrade pip
+  ```
 
 ---
 
@@ -189,17 +191,3 @@ Installe le certificat racine dans l’environnement ou fais pointer `verify` ve
 ```python
 response = requests.get('https://www.google.com', verify='C:/dev/certs/ZscalerRootCA.pem')
 ```
-
----
-
-## ✅ Résumé des bonnes pratiques
-
-* Utilise toujours un **environnement virtuel par projet** (`python -m venv .venv`).
-* **Versionne** ton `requirements.txt`, pas le dossier `.venv`.
-* **Vérifie les certificats** internes si tu es derrière un proxy HTTPS.
-* **Évite** `verify=False` sauf pour du debug local.
-* **Garde PIP à jour** :
-
-  ```powershell
-  python -m pip install --upgrade pip
-  ```

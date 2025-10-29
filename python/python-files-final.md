@@ -1,9 +1,5 @@
 # Python — Fichiers & Répertoires
 
-> Référence pratique pour manipuler des fichiers et des dossiers avec les bibliothèques standard (`os`, `pathlib`, `csv`).
-
----
-
 ## 📖 Lire un fichier texte
 
 ### Vérifier l’existence d’un fichier
