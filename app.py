@@ -1,24 +1,14 @@
-import requests
-
-
 class Person:
-    
-    def __init__(self, name):
-        self.name = name
-        self.counter = 0
+    def __init__(self, first_name, last_name, age):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.age = age
 
-    def greet(self):
-        return f"Hello, {self.name}!"
-    
+    def __str__(self):
+        return f'Person({self.first_name},{self.last_name},{self.age})'
 
-
-# response = requests.get('https://www.google.com', verify=False)
-# if response.status_code == 200:
-#     print(response.text)
-
-person = Person("Alice")
-person.age = 30
-print(person.name)
-
-person.counter += 1
-print(person.counter)
+companies = [('Google', 2019, 134.81),
+             ('Apple', 2019, 260.2),
+             ('Facebook', 2019, 70.7)]
+result = sorted(companies, key=lambda company: company[2], reverse=True)
+print(companies)
