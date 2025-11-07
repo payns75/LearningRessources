@@ -62,6 +62,7 @@ Ajouter des # (tag), les titres commencent à partir du double #. Les tags sont 
 - Advanced tables
 - Kanban
 - Note refactor (à regarder)
+- JupyMD
 
 // Une fois les plugins installé, aller dans les options pour régler les paramètres
 - Calendar => 
