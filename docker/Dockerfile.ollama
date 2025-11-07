@@ -1,0 +1,7 @@
+FROM ollama/ollama:latest
+
+# Copier la CA Zscaler en PEM (nommée zscaler.crt)
+COPY corp-rootCA.crt /usr/local/share/ca-certificates/zscaler.crt
+
+# Installer ca-certificates si besoin, puis enregistrer la CA
+RUN apt-get update && apt-get install -y ca-certificates && update-ca-certificates && rm -rf /var/lib/apt/lists/*

@@ -254,7 +254,7 @@ total = reduce(lambda a, b: a + b, scores)
 print(total)
 ```
 
-## List comporehensions
+## List comprehensions
 
 Il est parfois utile de créer des copies de liste et éventuellement d'y appliquer une fonction de transformation. Il existe en Python une écriture simplifiée qui permet de répondre à ce besoin. Assez simple à comprendre, l'exemple suivant permet de prendre la liste numbers et de créer une nouvelle liste en mettant chacune des entrées au carré.
 
