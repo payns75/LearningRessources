@@ -1,2 +1,13 @@
+# --- Environnements virtuels ---
+venv/
+env/
+.venv/
+.env/
+
+# --- Fichiers de cache Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
 docker/models
 docker/corp-rootCA.crt
