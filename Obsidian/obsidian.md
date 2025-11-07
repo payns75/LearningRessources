@@ -4,6 +4,7 @@
 - notebooks python jupyther
 - Validation de l'orthographe
 - Synchronisation vers github / Regarder la synchronisation
+- GitHub Copilot
 - Comment distinguer un titre niveau 1 et un tag.
 - Trouver le raccourci pour mettre en surbrillance
 - Regarder le mode d'import de notes depuis one notes par exemple
