@@ -64,6 +64,7 @@ Ajouter des # (tag), les titres commencent à partir du double #. Les tags sont 
 - Kanban
 - Note refactor (à regarder)
 - JupyMD
+- Excalidraw
 
 // Une fois les plugins installé, aller dans les options pour régler les paramètres
 - Calendar => 
